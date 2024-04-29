@@ -59,10 +59,10 @@
                 <li><a href="{{ url_for('contact_us') }}">Contact_us</a></li>
             </div>
             <div class="newsletter">
-                <form action="/" method="post" id="form_nw">
+                <form action="/subscribe_form" method="POST" id="subscribe_form">
                     <h2  id="radius_nw">Newsletter</h2><br> 
-                    <input  id="radius_nw" type="text" placeholder="Your Name"><br><br>
-                    <input  id="radius_nw" type="email" placeholder="Your Email"><br><br>
+                    <input  id="radius_nw" name="name" type="text" placeholder="Your Name" required><br><br>
+                    <input  id="radius_nw" name="email" type="email" placeholder="Your Email" required><br><br>
                     <button  id="radius_nw">Subscribe Now</button>
                 </form>
                 <div class="Social">

@@ -45,5 +45,14 @@ def ai_healthcare():
 def ai_m():
     return render_template('blogs/Technology/ai_m&m.html')
 
+
+@app.route('/subscribe_form',methods = ["POST","GET"])
+def subscriber():
+    if request.method == "POST":
+        name = request.form.get('name')
+        email = request.form.get('email')
+        if name and email:
+            print(name,email)
+            return render_template('start.html')
 if __name__ == "__main__":
     app.run(debug=True)
