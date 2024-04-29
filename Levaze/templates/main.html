@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="website">
+      <div class="news">
+        <button class="button">Trending</button>
+        <marquee loop="">
+          ● Mind and Machine: Chronicles of AI Advancements 
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          ● The Enigmatic Lure of Black Holes: A Journey Through Space and Time
+        </marquee>
+      </div>
+      <main class="main">
+        <div class="text1">
+          <h3>
+            "Explore the Boundless World of Ideas and Insights. Dive into a
+            diverse array of thought-provoking articles, engaging stories, and
+            informative content curated to inspire, inform, and entertain. Join
+            our vibrant community of writers and readers as we navigate through
+            the ever-expanding universe of topics, from lifestyle and culture to
+            technology and beyond. Let Blogosphere be your gateway to discovery,
+            enlightenment, and connection in the digital realm of blogging."
+          </h3>
+        </div>
+        
+        <div class="content">
+          <div id="con1">
+            <a href="{{ url_for('ai_m') }}" target="_blank"><img src="/static/images/blog_img/Tech/AI_Mind/MindAI.png"
+                id="prop_img" alt="AI image">
+            </a>
+          </div>
+          <div class="box1">
+            <div id="bx1"><a href="https://www.mcafee.com/consumer/en-in/landing-page/direct/sem/mcafee-antivirus-plus.html?csrc=bing&csrcl2=pla-shopping&cctype=desktop-brand&ccstype=&ccoe=direct&ccoel2=sem&pkg_id=512&affid=1492&ccstype=1year&utm_source=bing&utm_medium=paidsearch&utm_campaign=en-in:PLA:::::D:&utm_content=All+Products&utm_term=&&utm_source=bing-pla-c&utm_campaign=359209295&utm_content=&utm_term=pla-4586612756976096&gclid=ba82763804711cc800ab101fecbd04b7&gclsrc=3p.ds&msclkid=ba82763804711cc800ab101fecbd04b7&gclid=ba82763804711cc800ab101fecbd04b7&gclsrc=3p.ds" target="_blank"><img src="/static/images/Advertise/mcafee.png" id="prop_box" alt="Advertisement_1" ></a></div>
+            <div id="bx3"><a href="https://www.apple.com/apple-vision-pro/" target="_blank"><img src="/static/images/Advertise/Adv1.png" id="prop_box" alt="Advertisement_1" ></a></div>
+          </div>
+          <div id="con2"><a href="{{ url_for('blackhole') }}" target="_blank"><img
+                src="/static/images/blog_img/Blackhole/blackhole.png" id="prop_img" alt="Black_hole"></a></div>
+
+          <div id="con3"></div>
+
+          
+          <div class="upper-box">
+            <h1 class="servicesh1">Welcome To Trending Blogs</h1>
+            <div class="services">
+            <div class="wrapper" id="services">
+                <button class="arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="card-wrapper">
+                    <div class="card-item">
+                        <img src="\static\images\blog_img\Tech\AI_Mind\AI_poster.png" alt="image" class="card-img">
+                      <div class="card-info">
+                          <a href="{{ url_for('ai_m') }}" class="card-title">Mind and Machine: Chronicles of AI
+                            Advancements</a>
+                          <p class="card-description"> The dynamic intersection between human cognition and 
+                            technological innovation, delving into the evolution....
+                          </p>
+                      </div>
+                      <a href="{{ url_for('ai_m') }}" class="card-button"> View More </a>
+                    </div>
+                    <div class="card-item">
+                        <img src="/static/images/blog_img/Blackhole/blackhole.png">
+                        <div class="card-info">
+                            <a href="{{ url_for('blackhole') }}" class="card-title">The Enigmatic Lure of Black Holes: A
+                              Journey Through Space and Time
+                            </a>
+                            <p class="card-description">Black holes, the mysterious titans of the cosmos, have captivated the
+                              human imagination for decades....</p>
+                        </div>
+                        <a href="{{ url_for('blackhole') }}" class="card-button"> View More </a>
+                    </div>
+                    <div class="card-item">
+                        <img src="#">
+                        <div class="card-info">
+                            <a href="#" class="card-title">Blog3</a>
+                            <p class="card-description">Info</p>
+                        </div>
+                        <a href="#" class="card-button"> View More </a>
+                    </div>
+                    <div class="card-item">
+                        <img src="#">
+                        <div class="card-info">
+                            <a href="#" class="card-title">Blog4</a>
+                            <p class="card-description">Info</p>
+                        </div>
+                        <a href="#" class="card-button"> View More </a>
+                    </div>
+                    <div class="card-item">
+                        <img src="#">
+                        <div class="card-info">
+                            <a href="#" class="card-title">Blog5</a>
+                            <p class="card-description">Info</p>
+                        </div>
+                        <a href="#" class="card-button"> View More </a>
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </div>
+
+      </main>
+    </div>
+    </div>
+    
+    {% endblock %}
+  </body>
+</html>
