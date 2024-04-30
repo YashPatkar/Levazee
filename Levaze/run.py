@@ -1,6 +1,14 @@
 from flask import Flask, make_response, render_template,request
-
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite///subscription.db'
+db = SQLAlchemy(app)
+
+class subscriber(db.Model):
+    id = db.Column(db.Integer,primary_key = True, autoincrement = True)
+    name = db.Column(db.String(100), nullable = False)
+    email = db.Column(db.String(100), primary_key = True, nullable = False)
+
 
 @app.route('/home',methods=["POST","GET"])
 def home():
